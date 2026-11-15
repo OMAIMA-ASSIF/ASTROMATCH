@@ -1,0 +1,3 @@
+﻿region,subregion,qualitative_aridity,earth_aridity_index_P_div_PET,index_applicable,source_url,interpretation_notes
+Gale Crater,Curiosity traversed terrain,Extremely dry (present-day),,No,https://science.nasa.gov/resource/humidity-in-gale-crater-scant-and-variable/,NASA reports all measured terrain units extremely dry compared with Earth; this is NOT an official hyper-arid P/PET category for Mars
+Utopia Planitia,Southern Utopia - Zhurong region,Extremely dry (present-day),,No,https://doi.org/10.1029/2022EA002252,Very low erosion and lack of fluvial erosion consistent with arid Amazonian conditions; not a measured or standardized Martian P/PET category

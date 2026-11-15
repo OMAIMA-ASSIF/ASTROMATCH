@@ -1,0 +1,92 @@
+{
+  "generated_at_utc": "2026-11-15T20:04:47.288597+00:00",
+  "earth_input": "outputs/astromatch_enriched_earth.csv",
+  "earth_rows": 85478,
+  "reference_site_count": 5,
+  "numeric_similarity_enabled": false,
+  "numeric_eligible_criteria": 0,
+  "screening_policy": {
+    "policy_version": 1,
+    "numeric_similarity_enabled": false,
+    "numeric_similarity_disabled_reason": "No criterion in the current compatibility matrix has been scientifically approved for numerical Earth-to-Moon or Earth-to-Mars comparison. Source definitions, physical quantities, temporal periods, spatial support, or reference provenance remain incomplete or incompatible.",
+    "compatibility_statuses": {
+      "NUMERIC_ELIGIBLE": "May contribute to a numerical score only after explicit site-specific approval.",
+      "SCREENING_ONLY": "May be used as a transparent filter/proxy; never as a numeric similarity score.",
+      "QUALITATIVE_ONLY": "Display source-backed descriptions without numeric comparison.",
+      "EXCLUDED": "Do not use as a matching criterion.",
+      "NEEDS_VALIDATION": "Keep out of numeric matching until definitions and scales are checked."
+    },
+    "screening_scenarios": {
+      "strict": {
+        "vegetation_max": 0.1,
+        "minimum_land_fraction": 0.5,
+        "accepted_aridity_classes": [
+          "Hyper-aride",
+          "Aride"
+        ],
+        "southern_polar_aridity_policy": "Include low-vegetation land cells south of 60 degrees south as aridity-unknown, not as dry."
+      },
+      "extended": {
+        "vegetation_max": 0.2,
+        "minimum_land_fraction": 0.5,
+        "accepted_aridity_classes": [
+          "Hyper-aride",
+          "Aride",
+          "Semi-aride"
+        ],
+        "southern_polar_aridity_policy": "Include low-vegetation land cells south of 60 degrees south as aridity-unknown, not as dry."
+      }
+    },
+    "screening_interpretation": "The aridity categories and vegetation thresholds are terrestrial screening proxies. They do not assert a standardized Martian aridity index, measured Martian NDVI, or validated analogue status.",
+    "not_used_as_independent_criteria": [
+      "ssrd_wm2 and energie_kwh_m2_an are near-redundant representations and receive no scoring weights.",
+      "bare_pct is not Mars rock abundance.",
+      "Earth elevation is not compared with Mars elevation datum.",
+      "K-Means and DBSCAN cluster labels are contextual descriptors only."
+    ]
+  },
+  "screening_candidate_rows": 118924,
+  "screening_region_rows": 1252,
+  "lunar_context_source": {
+    "path": "outputs/astromatch_enriched_earth.csv",
+    "rows": 85478,
+    "frontend_use": "User-filtered descriptive terrain, geology and surface context; no lunar similarity scoring."
+  },
+  "cluster_label_regression": {
+    "master_rows": 85478,
+    "unique_grid_cells": 85478,
+    "kmeans_labelled_cells": 78247,
+    "dbscan_labelled_cells": 78247,
+    "unlabelled_cells": 7231,
+    "labels_match_saved_csvs": true
+  },
+  "protected_input_sha256": {
+    "outputs/astromatch_enriched_earth.csv": "49e2c5891a4e367cae62a340b2ffdd37cf4cf1a9c1a47e315d17c389a7499a04",
+    "clustring/kmeans_cells.csv": "4b73a8da5bf2106c019870774cd20d430152721aee738fb66c5603c9cdb221f7",
+    "clustring/dbscan_cells.csv": "935708b16dbbb63dcb235c5ac92e4696ab2b80ae4bc369035d0b98b847bf985a"
+  },
+  "generated_files": [
+    "earth_screening_audit.csv",
+    "earth_screening_categories.csv",
+    "screening_coverage_by_latitude.csv",
+    "screening_filter_audit.csv",
+    "screening_candidate_counts.csv",
+    "mars_screening_candidates.csv",
+    "moon_screening_candidates.csv",
+    "analogue_regions.csv",
+    "top_analogs_per_reference.csv",
+    "analogue_regions.geojson",
+    "feature_contributions.csv",
+    "matching_coverage_report.csv",
+    "mission_matching_results.csv",
+    "mission_reference_details.json",
+    "feature_compatibility_final.csv"
+  ],
+  "output_notes": [
+    "Similarity scores and feature contributions are intentionally empty.",
+    "The same Mars-wide terrestrial screen is repeated for Gale and Utopia; repeated candidates are not site-specific analogue findings.",
+    "Moon candidate CSV is intentionally empty because available criteria are not validated for numeric or site-specific screening.",
+    "Region cell-count order is not an analogue-suitability ranking.",
+    "Aridity missing at latitudes south of -60 degrees is marked unknown and is not interpreted as dry."
+  ]
+}

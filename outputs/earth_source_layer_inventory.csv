@@ -1,0 +1,6 @@
+layer,source_file,rows,columns,coordinate_columns,latitude_min,latitude_max,longitude_min,longitude_max,valid_coordinates,duplicate_coordinates,grid_aligned_pct,column_names
+aridity,aridity.csv,70127,5,"lat, lon",-59.25,83.75,-179.75,179.75,70127,0,100.0,lon;lat;ai_valeur;ai_classe_code;ai_classe_nom
+geology,geological.csv,87098,4,"lat, lon",-89.75,83.25,-179.75,179.75,87098,0,100.0,lon;lat;glim_code;glim_classe
+local_relief,local_relief.csv,86600,3,"lat, lon",-56.140087971816776,83.839162213418,-179.96867172552555,179.9865154976896,86600,0,0.0,lon;lat;local_relief_m
+rock_cover,rock_cover.csv,50254,4,"lat, lon",-56.140087971816776,83.839162213418,-179.97968539196881,179.9865154976896,50254,0,0.0,lon;lat;bare_pct;land_frac
+solar,solar_illumination.csv,87098,4,"lat, lon",-89.75,83.25,-179.75,179.75,87098,0,100.0,lon;lat;ssrd_wm2;energie_kwh_m2_an

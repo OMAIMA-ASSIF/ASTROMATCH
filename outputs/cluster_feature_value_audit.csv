@@ -1,0 +1,17 @@
+﻿algorithm,feature,compared_cells,mismatch_cells,max_absolute_difference,status
+kmeans,precipitation,78247,0,0.0001990000000660075,PASS
+kmeans,vegetation,78247,0,5.00000000069889e-07,PASS
+kmeans,annual_temperature_range,78247,0,2.0000000020559128e-06,PASS
+kmeans,lst_diurnal_range,78247,0,2.0000000020559128e-06,PASS
+kmeans,slope,78247,0,5.000000005139782e-07,PASS
+kmeans,roughness,78247,0,1.4000000021496817e-05,PASS
+kmeans,elevation,78247,0,0.00024200000007112976,PASS
+kmeans,mean_annual_temperature,78247,0,2.0000000020559128e-06,PASS
+dbscan,precipitation,78247,0,0.0001990000000660075,PASS
+dbscan,vegetation,78247,0,5.00000000069889e-07,PASS
+dbscan,annual_temperature_range,78247,0,2.0000000020559128e-06,PASS
+dbscan,lst_diurnal_range,78247,0,2.0000000020559128e-06,PASS
+dbscan,slope,78247,0,5.000000005139782e-07,PASS
+dbscan,roughness,78247,0,1.4000000021496817e-05,PASS
+dbscan,elevation,78247,0,0.00024200000007112976,PASS
+dbscan,mean_annual_temperature,78247,0,2.0000000020559128e-06,PASS

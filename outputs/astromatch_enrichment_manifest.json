@@ -1,0 +1,101 @@
+{
+  "master_rows": 85478,
+  "master_columns_after_enrichment": 31,
+  "kmeans_labelled_cells": 78247,
+  "dbscan_labelled_cells": 78247,
+  "master_cells_without_clustering_labels": 7231,
+  "kmeans_dbscan_coordinate_populations_identical": true,
+  "cluster_feature_value_mismatches_across_both_algorithms": 0,
+  "base_clustering_features": [
+    "precipitation",
+    "vegetation",
+    "annual_temperature_range",
+    "lst_diurnal_range",
+    "slope",
+    "roughness",
+    "elevation",
+    "mean_annual_temperature"
+  ],
+  "additional_features_used_for_characterization": {
+    "aridity": [
+      "ai_valeur",
+      "ai_classe_code",
+      "ai_classe_nom"
+    ],
+    "geological": [
+      "glim_code",
+      "glim_classe"
+    ],
+    "local_relief": [
+      "local_relief_m"
+    ],
+    "rock_cover": [
+      "bare_pct",
+      "land_frac"
+    ],
+    "solar_illumination": [
+      "ssrd_wm2",
+      "energie_kwh_m2_an"
+    ]
+  },
+  "preprocessing_configuration": {
+    "features": [
+      "precipitation",
+      "vegetation",
+      "annual_temperature_range",
+      "lst_diurnal_range",
+      "slope",
+      "roughness",
+      "elevation",
+      "mean_annual_temperature"
+    ],
+    "log1p_features": [
+      "precipitation",
+      "roughness",
+      "slope"
+    ],
+    "scaler": "RobustScaler",
+    "quantile_range": [
+      25.0,
+      75.0
+    ],
+    "center_median": [
+      6.19081425631611,
+      0.5087805390357971,
+      24.760000228881836,
+      7.567753791809082,
+      0.1613898452661882,
+      2.2471364001835576,
+      524.980224609375,
+      1.9424999952316284
+    ],
+    "scale_iqr": [
+      1.6188801305018403,
+      0.6974999569356441,
+      16.82149887084961,
+      8.565175533294678,
+      0.2563835472667073,
+      2.0353553729157583,
+      1210.5665664672852,
+      35.598708152770996
+    ],
+    "note": "Fit on all valid TerraNova land cells; same transformation used by K-Means and DBSCAN."
+  },
+  "important_notes": [
+    "No model was retrained and no preprocessing was refitted.",
+    "Cluster labels were joined by rounded latitude/longitude keys (6 decimal places).",
+    "All master rows were preserved; cells without baseline cluster labels retain null labels.",
+    "DBSCAN label -1, if present, is preserved as the noise/outlier label.",
+    "Missing auxiliary measurements were not imputed or replaced with zero.",
+    "Categorical geological and aridity classes are summarized as distributions, not means.",
+    "Cluster IDs are nominal labels; numeric ordering has no scientific meaning."
+  ],
+  "generated_files": [
+    "astromatch_enriched_earth.csv",
+    "cluster_numeric_profiles.csv",
+    "cluster_category_distributions.csv",
+    "cluster_feature_coverage.csv",
+    "cluster_label_summary.csv",
+    "cluster_feature_value_audit.csv"
+  ]
+}

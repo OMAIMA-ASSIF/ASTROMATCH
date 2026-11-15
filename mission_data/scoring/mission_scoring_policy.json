@@ -1,0 +1,40 @@
+{
+  "policy_version": 1,
+  "numeric_similarity_enabled": false,
+  "numeric_similarity_disabled_reason": "No criterion in the current compatibility matrix has been scientifically approved for numerical Earth-to-Moon or Earth-to-Mars comparison. Source definitions, physical quantities, temporal periods, spatial support, or reference provenance remain incomplete or incompatible.",
+  "compatibility_statuses": {
+    "NUMERIC_ELIGIBLE": "May contribute to a numerical score only after explicit site-specific approval.",
+    "SCREENING_ONLY": "May be used as a transparent filter/proxy; never as a numeric similarity score.",
+    "QUALITATIVE_ONLY": "Display source-backed descriptions without numeric comparison.",
+    "EXCLUDED": "Do not use as a matching criterion.",
+    "NEEDS_VALIDATION": "Keep out of numeric matching until definitions and scales are checked."
+  },
+  "screening_scenarios": {
+    "strict": {
+      "vegetation_max": 0.1,
+      "minimum_land_fraction": 0.5,
+      "accepted_aridity_classes": [
+        "Hyper-aride",
+        "Aride"
+      ],
+      "southern_polar_aridity_policy": "Include low-vegetation land cells south of 60 degrees south as aridity-unknown, not as dry."
+    },
+    "extended": {
+      "vegetation_max": 0.2,
+      "minimum_land_fraction": 0.5,
+      "accepted_aridity_classes": [
+        "Hyper-aride",
+        "Aride",
+        "Semi-aride"
+      ],
+      "southern_polar_aridity_policy": "Include low-vegetation land cells south of 60 degrees south as aridity-unknown, not as dry."
+    }
+  },
+  "screening_interpretation": "The aridity categories and vegetation thresholds are terrestrial screening proxies. They do not assert a standardized Martian aridity index, measured Martian NDVI, or validated analogue status.",
+  "not_used_as_independent_criteria": [
+    "ssrd_wm2 and energie_kwh_m2_an are near-redundant representations and receive no scoring weights.",
+    "bare_pct is not Mars rock abundance.",
+    "Earth elevation is not compared with Mars elevation datum.",
+    "K-Means and DBSCAN cluster labels are contextual descriptors only."
+  ]
+}

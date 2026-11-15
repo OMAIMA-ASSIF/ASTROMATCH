@@ -1,0 +1,6 @@
+﻿layer,method_expected,source_rows,source_exact_grid_pct,source_duplicate_coordinates,target_cells_with_source_point,target_source_coverage_pct,master_missing_primary_pct,source_value_nulls_on_covered_cells,master_match_distance_median_km,master_match_distance_p95_km,notes
+aridity,exact grid-cell join,70127,100.0,0,61235,71.63831629191137,28.36168370808863,ai_valeur=0; ai_classe_code=0; ai_classe_nom=0,0.0,0.0,Source coordinates are all on the 0.5-degree reference grid.
+geological,exact grid-cell join,87098,100.0,0,85009,99.45132080769321,0.5486791923067924,glim_code=0; glim_classe=0,0.0,0.0,Source coordinates are all on the 0.5-degree reference grid.
+local_relief,"spherical nearest neighbour, max 65 km",86600,0.0,0,61249,71.6546947752638,28.34530522473619,0,23.07476735954885,32.3122337225443,Missing-vs-recomputed matching disagreement: 0 cells.
+rock_cover,"spherical nearest neighbour, max 65 km",50254,0.0,0,60579,70.87086735768268,29.129132642317323,0,23.01626499122211,32.27330420932626,Missing-vs-recomputed matching disagreement: 0 cells.
+solar_illumination,exact grid-cell join,87098,100.0,0,85009,99.45132080769321,0.5486791923067924,ssrd_wm2=0; energie_kwh_m2_an=0,0.0,0.0,Source coordinates are all on the 0.5-degree reference grid.

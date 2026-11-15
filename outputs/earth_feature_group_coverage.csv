@@ -1,0 +1,7 @@
+﻿feature_group,columns_checked,complete_cells,incomplete_cells,complete_pct,incomplete_pct
+base_8_predictors,precipitation;vegetation;annual_temperature_range;lst_diurnal_range;slope;roughness;elevation;mean_annual_temperature,78247,7231,91.54051334846393,8.459486651536068
+aridity,ai_valeur,61235,24243,71.63831629191137,28.36168370808863
+geological,glim_code,85009,469,99.45132080769321,0.5486791923067924
+local_relief,local_relief_m,61249,24229,71.6546947752638,28.34530522473619
+rock_cover,bare_pct,60579,24899,70.87086735768268,29.129132642317323
+solar_illumination,energie_kwh_m2_an,85009,469,99.45132080769321,0.5486791923067924

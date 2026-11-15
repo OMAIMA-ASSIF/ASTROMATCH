@@ -1,0 +1,7 @@
+latitude_band,cells,aridity_available,vegetation_available,aridity_unknown_southern_polar,strict_screened_candidates,extended_screened_candidates
+north_mid_30_to_60,21554,21554,21554,0,815,2915
+north_polar_60_to_90,15256,15243,15256,0,180,809
+north_tropics_0_to_30,12473,12442,12473,0,1402,4075
+south_mid_30_to_60,2163,2163,2163,0,0,151
+south_polar_60_to_90,24199,0,24199,24199,24199,24199
+south_tropics_0_to_30,9833,9833,9833,0,144,573

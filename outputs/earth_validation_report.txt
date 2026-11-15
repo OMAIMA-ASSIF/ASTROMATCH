@@ -1,0 +1,42 @@
+Master dataset: 85,478 rows x 29 columns
+
+STRUCTURAL CHECKS
+Rows: 85,478
+Duplicate grid cells: 0
+Duplicate lon/lat pairs: 0
+Invalid grid indices: 0
+Coordinates off expected 0.5-degree centres: 0
+Rows with land_fraction outside [0.5, 1.0] or missing: 0
+
+FEATURE-GROUP COMPLETENESS
+base_8_predictors: 78,247/85,478 complete (91.54%)
+aridity: 61,235/85,478 complete (71.64%)
+geological: 85,009/85,478 complete (99.45%)
+local_relief: 61,249/85,478 complete (71.65%)
+rock_cover: 60,579/85,478 complete (70.87%)
+solar_illumination: 85,009/85,478 complete (99.45%)
+
+SOURCE ALIGNMENT
+aridity: source rows=70,127; source coverage=71.64%; master primary missing=28.36%; method=exact grid-cell join
+  Notes: Source coordinates are all on the 0.5-degree reference grid.
+geological: source rows=87,098; source coverage=99.45%; master primary missing=0.55%; method=exact grid-cell join
+  Notes: Source coordinates are all on the 0.5-degree reference grid.
+local_relief: source rows=86,600; source coverage=71.65%; master primary missing=28.35%; method=spherical nearest neighbour, max 65 km
+  Notes: Missing-vs-recomputed matching disagreement: 0 cells.
+rock_cover: source rows=50,254; source coverage=70.87%; master primary missing=29.13%; method=spherical nearest neighbour, max 65 km
+  Notes: Missing-vs-recomputed matching disagreement: 0 cells.
+solar_illumination: source rows=87,098; source coverage=99.45%; master primary missing=0.55%; method=exact grid-cell join
+  Notes: Source coordinates are all on the 0.5-degree reference grid.
+
+RANGE CHECKS
+No out-of-range values found for the tested fields.
+
+ISSUES
+No structural or tested range errors found.
+
+WARNINGS
+aridity: 24,243 candidate cells (28.36%) have no primary value. Use the alignment and latitude reports to decide whether this is expected source coverage or a grid/matching issue.
+geological: 469 candidate cells (0.55%) have no primary value. Use the alignment and latitude reports to decide whether this is expected source coverage or a grid/matching issue.
+local_relief: 24,229 candidate cells (28.35%) have no primary value. Use the alignment and latitude reports to decide whether this is expected source coverage or a grid/matching issue.
+rock_cover: 24,899 candidate cells (29.13%) have no primary value. Use the alignment and latitude reports to decide whether this is expected source coverage or a grid/matching issue.
+solar_illumination: 469 candidate cells (0.55%) have no primary value. Use the alignment and latitude reports to decide whether this is expected source coverage or a grid/matching issue.

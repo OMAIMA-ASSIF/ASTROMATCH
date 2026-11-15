@@ -1,0 +1,6 @@
+mission_body,site_id,site,latitude_deg,longitude_east_deg,sampling_radius_km,data_readiness,spatial_scope_note,longitude_signed_deg
+MOON,MOON_SHACKLETON,Shackleton Rim,-89.8392,208.142,2.0,PROVISIONAL_PROOF_OF_CONCEPT,Lunar south-polar reference site,-151.858
+MOON,MOON_MALAPERT,Malapert Massif,-85.964,357.681,2.0,PROVISIONAL_PROOF_OF_CONCEPT,Lunar south-polar reference site,-2.31899999999996
+MOON,MOON_HAWORTH,Haworth Cold Trap,-87.575,332.977,2.0,PROVISIONAL_PROOF_OF_CONCEPT,Nearby-region composition is a proxy; cold-trap interior composition is unmeasured,-27.023000000000025
+MARS,MARS_GALE,Gale Crater,-5.4,137.8,,SOURCE_SPECIFIC,"Keep rover landing ellipse, geological units and regional measurements distinct",137.8
+MARS,MARS_UTOPIA,Utopia Planitia,47.0,118.0,,SOURCE_SPECIFIC,"Some supplied geological and rock measurements refer to Southern Utopia near Zhurong, not this reference coordinate",118.0

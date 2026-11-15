@@ -1,0 +1,22 @@
+layer,feature,category,count
+aridity,ai_classe_nom,Humide,33510
+aridity,ai_classe_nom,Aride,11868
+aridity,ai_classe_nom,Semi-aride,11566
+aridity,ai_classe_nom,Sub-humide sec,6732
+aridity,ai_classe_nom,Hyper-aride,6451
+geology,glim_classe,ig,24743
+geology,glim_classe,su,14687
+geology,glim_classe,sm,11579
+geology,glim_classe,ss,11574
+geology,glim_classe,mt,8959
+geology,glim_classe,sc,4866
+geology,glim_classe,pa,4178
+geology,glim_classe,vb,2560
+geology,glim_classe,vi,1255
+geology,glim_classe,va,667
+geology,glim_classe,pb,634
+geology,glim_classe,wb,553
+geology,glim_classe,py,365
+geology,glim_classe,pi,268
+geology,glim_classe,ev,163
+geology,glim_classe,nd,47

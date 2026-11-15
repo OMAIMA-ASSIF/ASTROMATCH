@@ -1,0 +1,3 @@
+﻿location,criterion,value,unit,definition,evidence_type,spatial_and_method_notes,source_url,direct_cross_site_comparison
+Mars-Gale Crater,vegetation,0,NDVI-equivalent,Bare surface / no known vegetation; NDVI is an Earth remote-sensing index,conceptual proxy,not a measured Mars NDVI,https://science.nasa.gov/mars/facts/,yes as bare-land screening only
+Mars-Utopia Planitia,vegetation,0,NDVI-equivalent,Bare surface / no known vegetation; NDVI is an Earth remote-sensing index,conceptual proxy,not a measured Mars NDVI,https://science.nasa.gov/mars/facts/,yes as bare-land screening only

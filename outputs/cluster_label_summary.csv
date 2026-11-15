@@ -1,0 +1,11 @@
+﻿algorithm,cluster,cells,pct_of_labelled_cells,is_dbscan_noise
+kmeans,0.0,14789,18.9004,False
+kmeans,1.0,12215,15.6108,False
+kmeans,2.0,22937,29.3136,False
+kmeans,3.0,16783,21.4487,False
+kmeans,4.0,11523,14.7264,False
+dbscan,-1.0,1681,2.1483,False
+dbscan,0.0,75801,96.874,False
+dbscan,1.0,21,0.0268,False
+dbscan,2.0,723,0.924,False
+dbscan,3.0,21,0.0268,False

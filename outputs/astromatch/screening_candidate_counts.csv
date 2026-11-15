@@ -1,0 +1,6 @@
+scenario,candidate_tier,count_per_martian_reference_site,count_including_two_independent_reference_sets
+extended,SCREENED_DRY_LOW_VEGETATION,7819,15638
+extended,SCREENED_LOW_VEGETATION_ARIDITY_UNKNOWN,24199,48398
+extended,SCREENED_SEMIARID_LOW_VEGETATION,704,1408
+strict,SCREENED_DRY_LOW_VEGETATION,2541,5082
+strict,SCREENED_LOW_VEGETATION_ARIDITY_UNKNOWN,24199,48398
